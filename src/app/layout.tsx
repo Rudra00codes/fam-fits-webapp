@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { FontDebugger } from "@/components/utils/FontDebugger";
 
 export const metadata: Metadata = {
   title: "Fam-Fits | Premium Streetwear & Affiliate Discovery",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
+        <FontDebugger />
         {children}
       </body>
     </html>
