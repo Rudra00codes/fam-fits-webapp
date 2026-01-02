@@ -70,18 +70,6 @@ export function Hero() {
                             Shop Women
                         </Link>
                     </motion.div>
-
-                    {/* Indicators / Stats */}
-                    <div className="mt-20 flex space-x-12 border-t border-white/10 pt-8">
-                        <div>
-                            <span className="block text-3xl font-display text-white mb-1">20+</span>
-                            <span className="text-white/40 text-xs font-bold uppercase tracking-widest">Brands</span>
-                        </div>
-                        <div>
-                            <span className="block text-3xl font-display text-white mb-1">Weekly</span>
-                            <span className="text-white/40 text-xs font-bold uppercase tracking-widest">New Drops</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
