@@ -1,5 +1,53 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'AntonLocal';
+  src: url('/fonts/Anton-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OswaldLocal';
+  src: url('/fonts/Oswald-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OswaldLocal';
+  src: url('/fonts/Oswald-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OswaldLocal';
+  src: url('/fonts/Oswald-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OswaldLocal';
+  src: url('/fonts/Oswald-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OswaldLocal';
+  src: url('/fonts/Oswald-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   /* Brand Colors */
   --color-brand-black: #0D0D0D;
@@ -14,8 +62,8 @@
   --color-foreground: var(--foreground);
 
   /* Typography */
-  --font-display: var(--font-bebas-neue), sans-serif;
-  --font-sans: var(--font-inter), sans-serif;
+  --font-display: "AntonLocal", sans-serif;
+  --font-sans: "OswaldLocal", sans-serif;
 
   /* Spacing & Borders */
   --radius-xl: 1.5rem;
@@ -36,7 +84,8 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    @apply antialiased selection:bg-brand-black selection:text-white;
+    font-family: var(--font-sans), sans-serif;
+    @apply antialiased selection:bg-brand-black selection:text-white font-light;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   }
 
@@ -44,8 +93,8 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-bebas-neue), sans-serif;
-    @apply tracking-tight uppercase;
+    font-family: var(--font-display), sans-serif;
+    @apply tracking-wide uppercase font-normal;
   }
 }
 
