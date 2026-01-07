@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description: "Discover the best streetwear and lifestyle products curated for you.",
 };
 
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased">
         <FontDebugger />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
