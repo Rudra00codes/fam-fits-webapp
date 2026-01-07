@@ -16,7 +16,7 @@ export function ProductCard({ product }: ProductCardProps) {
             className="group relative flex flex-col h-full"
         >
             <Link href={product.affiliateLink} target="_blank" rel="noopener noreferrer" className="flex-1">
-                <div className="aspect-[3/4] rounded-[2rem] overflow-hidden bg-brand-gray-light mb-6 relative">
+                <div className="aspect-square rounded-[2rem] overflow-hidden bg-brand-gray-light mb-6 relative">
                     <img
                         src={product.imageUrl}
                         alt={product.title}
